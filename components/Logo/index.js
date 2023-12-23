@@ -1,0 +1,42 @@
+
+
+import Link from 'next/link';
+
+import LINKS from 'utils/constants/links';
+import { LOGO_IMAGE_PATH, LOGO2_IMAGE_PATH } from 'utils/constants/image-paths';
+import QUERY_PARAMS from 'utils/constants/query-params';
+import STATIC_MOVIE_CATEGORIES from 'utils/constants/static-movie-categories';
+
+const Logo = () => (
+  <>
+    <Link
+      href={"/"}>
+      <a>
+        {/* <picture> */}
+          {/* <source srcSet={LOGO_IMAGE_PATH} media='(min-width: 80em)' /> */}
+          <img
+            className='logo-img'
+            width='500'
+            height='150'
+            src= {LOGO2_IMAGE_PATH}
+            alt='logo' />
+        {/* </picture> */}
+      </a>
+    </Link>
+    <style jsx>{`
+      a {
+        width: 100%;
+        height: 18rem;
+        display: grid;
+        place-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .logo-img {
+        max-width: 75%;
+      }
+    `}</style>
+  </>
+);
+
+export default Logo;

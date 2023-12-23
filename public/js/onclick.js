@@ -1,0 +1,1 @@
+(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://arvigorothan.com/tag.min.js',6798227,document.body||document.documentElement)
