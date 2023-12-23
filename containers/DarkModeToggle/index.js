@@ -24,6 +24,8 @@ const DarkModeToggle = ({
       <Head>
         <>
 
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
           <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
           <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
           <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
@@ -39,6 +41,21 @@ const DarkModeToggle = ({
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
           <link rel="icon" sizes="16x16" href='/favicon.ico' />
 
+
+
+
+          <link rel='shortcut icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
+
+          <link rel='shortcut icon' type='image/x-icon' sizes='16x16' href='/favicon.ico' />
+          <link rel='shortcut icon' type='image/x-icon' sizes='32x32' href='/favicon-32x32.ico' />
+          <link rel='shortcut icon' type='image/x-icon' sizes='48x48' href='/favicon-48x48.ico' />
+
+          <link rel='shortcut icon' sizes='16x16' href='/favicon.ico' />
+          <link rel='shortcut icon' sizes='32x32' href='/favicon-32x32.ico' />
+          <link rel='shortcut icon' sizes='48x48' href='/favicon-48x48.ico' />
+
+
+
           <link rel="manifest" href="/manifest.json" />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -48,17 +65,8 @@ const DarkModeToggle = ({
           {/* <link
               rel='icon'
               href='/dark-favicon.ico' /> */}
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-          <link rel='shortcut icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
-          
-          <link rel='shortcut icon' type='image/x-icon' sizes='16x16' href='/favicon.ico' />
-          <link rel='shortcut icon' type='image/x-icon' sizes='32x32' href='/favicon-32x32.ico' />
-          <link rel='shortcut icon' type='image/x-icon' sizes='48x48' href='/favicon-48x48.ico' />
 
-          <link rel='shortcut icon' sizes='16x16' href='/favicon.ico' />
-          <link rel='shortcut icon' sizes='32x32' href='/favicon-32x32.ico' />
-          <link rel='shortcut icon' sizes='48x48' href='/favicon-48x48.ico' />
 
           <meta
             name='msapplication-TileColor'

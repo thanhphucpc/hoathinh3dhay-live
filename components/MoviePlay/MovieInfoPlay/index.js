@@ -105,7 +105,7 @@ const MovieInfo = ({ theme, movie, eps, currentEpId }) => {
           genres={movie.genres} />
         <TheSynopsisSection
           className='the-synopsis-section-bottom-margin'
-          movieName={ `${movie.title} Tập ${currentEpId.replace('tap-', '')}`}
+          movieName={ `${movie.title} Tập ${currentEpId.replace('tap-', '')} thuyết minh`}
           synopsis={movie.overview || ''} />
 
 

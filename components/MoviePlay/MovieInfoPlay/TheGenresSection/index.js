@@ -15,7 +15,7 @@ const TheGenresSection = ({
             key={genre.id}
             genre={genre} />
         ))} */}
-        {[{ id: "1", name: "Tu tiên" }, { id: "2", name: "Xuyên không" }, { id: "3", name: "Luyện cấp" }].map(genre => (
+        {[{ id: "1", name: "Tu tiên" }, { id: "2", name: "Xuyên không" }, { id: "3", name: "Luyện cấp" }, { id: "4", name: "Trùng sinh" }].map(genre => (
           <GenreLink
             key={genre.id}
             genre={genre} />

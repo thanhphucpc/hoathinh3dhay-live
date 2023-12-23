@@ -30,13 +30,17 @@ const MovieInfo = ({
       <TheGenresSection
         className='the-genres-section-bottom-margin'
         genres={movie.genres} />
-      <TheSynopsisSection
-        className='the-synopsis-section-bottom-margin'
-        synopsis={movie.overview || 'There is no synopsis available...'} />
+
 
       <TheEp
         className='the-synopsis-section-bottom-margin'
         eps={eps} movie={movie} />
+      <br />
+
+      <TheSynopsisSection
+        className='the-synopsis-section-bottom-margin'
+        movieName={`${movie.title} thuyết minh`}
+        synopsis={movie.overview || 'There is no synopsis available...'} />
 
       {/* <TheCastSection
         className='cast-section-bottom-margin'

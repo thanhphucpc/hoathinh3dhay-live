@@ -3,11 +3,12 @@ import TextSection from 'parts/TextSection';
 
 const TheSynopsisSection = ({
   className,
-  synopsis
+  synopsis,
+  movieName
 }) => (
   <TextSection
     className={className}
-    heading='Nội dung'
+    heading= {movieName}
     text={synopsis} />
 );
 
