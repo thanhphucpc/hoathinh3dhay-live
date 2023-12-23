@@ -87,8 +87,7 @@ class MyDocument extends Document {
             }} />
           {/* <script async src="https://www.google-analytics.com/analytics.js"></script> */}
 
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKHDHG31TX"></script>
-        </Head>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z4XV1H9MZ"></script>        </Head>
         <body className={CLASS_NAMES.DARK}>
           {/* MEMO: inspired by https://github.com/donavon/use-dark-mode#that-flash */}
           <Script>
@@ -142,7 +141,7 @@ class MyDocument extends Document {
               function gtag() { dataLayer.push(arguments); }
               gtag('js', new Date());
 
-              gtag('config', 'G-HKHDHG31TX');
+              gtag('config', 'G-7Z4XV1H9MZ');
             }}
 
           </Script>
