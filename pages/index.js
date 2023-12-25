@@ -32,15 +32,15 @@ const Home = ({ movies }) => {
     <>
       <PageWrapper>
         <Head>
-          <title>{`Phim hay thuyết minh hoạt hình Trung Quốc | HHTM`}</title>
+          <title>{`Phim hoạt hình thuyết minh, hoạt hình Trung Quốc | hh3dhay`}</title>
 
-          <meta name='title' content='Phim hay thuyết minh hoạt hình Trung Quốc | HHTM' />
-          <meta name="description" content="hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại hhtm.live" />
+          <meta name='title' content='Phim hoạt hình thuyết minh hoạt hình Trung Quốc | hh3dhay' />
+          <meta name="description" content="hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại https://hhtm.live" />
           {/* Open Graph / Facebook */}
           <meta property='og:type' content='website' />
-          <meta property='og:url' content='https://hhtm.live' />
-          <meta property='og:title' content='Phim hay thuyết minh hoạt hình Trung Quốc | HHTM' />
-          <meta property='og:description' content='hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại hhtm.live' />
+          <meta property='og:url' content='https://hoathinh3dhay.live' />
+          <meta property='og:title' content='Phim hoạt hình thuyết minh hoạt hình Trung Quốc | hh3dhay' />
+          <meta property='og:description' content='hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại https://hhtm.live' />
           <meta property='og:image' content='https://hhtm.tv/upload/product/2023_30_07_20_12_54-Fan-Ren-Xiu-Xian-Zhuan.jpg' />
           <meta property='og:image:width' content='1200' />
           <meta property='og:image:height' content='628' />
@@ -48,14 +48,14 @@ const Home = ({ movies }) => {
           {/* Twitter */}
           <meta property='twitter:card' content='summary_large_image' />
           <meta property='twitter:url' content='https://hhtm.live' />
-          <meta property='twitter:title' content='Phim hay thuyết minh hoạt hình Trung Quốc | HHTM' />
-          <meta property='twitter:description' content='hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại hhtm.live' />
+          <meta property='twitter:title' content='phim hoạt hình thuyết minh, hoạt hình Trung Quốc | hh3dhay' />
+          <meta property='twitter:description' content='hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại https://hhtm.live' />
           <meta property='twitter:image' content='https://hhtm.tv/upload/product/2023_30_07_20_12_54-Fan-Ren-Xiu-Xian-Zhuan.jpg' />
 
         </Head>
         <PaddingWrapper>
           <Header
-            title={"Phim hay thuyết minh"}
+            title={"Phim hoạt hình 3d thuyết minh"}
           />
           <MovieList
             movies={movies2 ? movies2 : dataMovie}

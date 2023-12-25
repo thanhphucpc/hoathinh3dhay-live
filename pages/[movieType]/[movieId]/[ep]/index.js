@@ -30,7 +30,7 @@ const MoviePlayList = ({ data }) => {
     <>
       <PageWrapper>
         <Head>
-          <title>{`${movie.title} tập ${currentEp?.replace("tap-", "")} | HHTM - Phim hay thuyết minh`}</title>
+          <title>{`${movie.title} tập ${currentEp?.replace("tap-", "")} thuyết minh | hh3dhay - Phim hoạt hình thuyết minh`}</title>
 
           <meta property='description' content={`${movie.overview.substring(0, 500).replace('<strong>', "").replace('</strong>', "").replace('</br>', "")}`} />
           <meta property='og:description' content={`${movie.overview.substring(0, 500).replace('<strong>', "").replace('</strong>', "").replace('</br>', "")}`} />

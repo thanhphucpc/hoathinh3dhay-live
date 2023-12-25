@@ -28,7 +28,7 @@ const MovieDetail = ({ data }) => {
     <>
       <PageWrapper>
         <Head>
-          <title>{`${movie.title} | HHTM - Phim hay thuyết minh`}</title>
+          <title>{`${movie.title} thuyết minh| hh3dhay - Phim hoạt hình thuyết minh`}</title>
           <meta property='description' content={`${movie.overview.substring(0, 500).replace('<strong>', "").replace('</strong>', "").replace('</br>', "")}`} />
           <meta property='og:description' content={`${movie.overview.substring(0, 500).replace('<strong>', "").replace('</strong>', "").replace('</br>', "")}`} />
           <meta property='twitter:description' content={`${movie.overview.substring(0, 500).replace('<strong>', "").replace('</strong>', "").replace('</br>', "")}`} />
