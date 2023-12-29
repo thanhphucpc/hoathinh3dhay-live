@@ -47,9 +47,9 @@ const MovieDetail = ({ data }) => {
       </PageWrapper>
 
       {/* onclick */}
-      {/* <Script src="/js/onclick.js" />
+      <Script src="/js/onclick.js" />
       <Script data-cfasync="false" type="text/javascript" src="/js/onclick-adb.js"/>
-      <Script src="/js/onclick-adb-2.js"/> */}
+      <Script src="/js/onclick-adb-2.js"/>
 
     </>
 
