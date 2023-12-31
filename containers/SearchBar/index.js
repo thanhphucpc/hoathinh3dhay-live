@@ -68,7 +68,7 @@ const SearchBar = ({
         ref={inputRef}
         value={searchTerm}
         onChange={onInputChangeHandler}
-        placeholder='Search for a movie...' />
+        placeholder='Nhập tên phim...' />
     </Form>
   );
 };

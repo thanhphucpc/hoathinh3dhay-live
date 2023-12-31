@@ -1,97 +1,107 @@
+import { useEffect } from 'react';
+import Router, { useRouter } from 'next/router';
+import { useDispatch, useSelector } from 'react-redux';
 
+import Header from 'parts/Header';
+import PageWrapper from 'parts/PageWrapper';
+import PaddingWrapper from 'parts/PaddingWrapper';
+import MovieList from 'components/MovieList';
+import Head from 'next/head'
+import { dataMovie } from "data/movies"
 
-// import { useEffect } from 'react';
-// import Head from 'next/head';
-// import Router, { useRouter } from 'next/router';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { animateScroll as scroll } from 'react-scroll';
+const Home = ({ movies }) => {
 
-// import Header from 'parts/Header';
-// import PageWrapper from 'parts/PageWrapper';
-// import NotFound from 'parts/NotFound';
-// import PaddingWrapper from 'parts/PaddingWrapper';
-// import MovieList from 'components/MovieList';
-// import Loader from 'components/UI/Loader';
-// import QUERY_PARAMS from 'utils/constants/query-params';
-// import LINKS from 'utils/constants/links';
-// import checkEmptyObject from 'utils/helpers/checkEmptyObject';
+    let movies2 = Buffer.from(movies, 'base64').toString('utf-8')
+    movies2 = Buffer.from(movies2, 'base64').toString('utf-8')
+    movies2 = Buffer.from(movies2, 'base64').toString('utf-8')
+    movies2 = Buffer.from(movies2, 'base64').toString('utf-8')
+    movies2 = Buffer.from(movies2, 'base64').toString('utf-8')
+    movies2 = JSON.parse(movies2)
 
-// const Search = () => {
-//   const dispatch = useDispatch();
-//   const general = useSelector(state => state.general);
-//   const movies = useSelector(state => state.movies);
-//   const { query } = useRouter();
+    const dispatch = useDispatch();
 
-//   const searchTerm = query[QUERY_PARAMS.SEARCH_TERM];
-//   const page = Number(query[QUERY_PARAMS.PAGE]);
+    const { query } = useRouter();
 
-//   useEffect(() => {
-//     return () => {
-//       dispatch(clearMovies());
-//     };
-//   }, [dispatch]);
+    // const categoryName = query[QUERY_PARAMS.CATEGORY];
+    // const page = Number(query[QUERY_PARAMS.PAGE]);
 
-//   useEffect(() => {
-//     /**
-//      * RE: https://github.com/vercel/next.js/issues/8259
-//      * For example. https://github.com/vercel/next.js/issues/8259#issuecomment-650225962
-//      */
-//     if (checkEmptyObject(query)) return;
+    return (
+        <>
+            <PageWrapper>
+                <Head>
+                    <title>{`Phim hoạt hình thuyết minh, hoạt hình Trung Quốc | hh3dhay`}</title>
 
-//     const initialSearchTerm = Router.query[QUERY_PARAMS.SEARCH_TERM];
-//     const initialPage = Router.query[QUERY_PARAMS.PAGE];
- 
-//     if (!initialPage) {
-//       const newPage = 1;
-//       const newSearchTerm = initialSearchTerm;
-//       console.log('[Search useEffect] query parameter update: newSearchTerm, newPage => ', newSearchTerm, newPage);
-//       Router.replace({
-//         pathname: LINKS.SEARCH.HREF,
-//         query: {
-//           [QUERY_PARAMS.SEARCH_TERM]: newSearchTerm,
-//           [QUERY_PARAMS.PAGE]: newPage
-//         }
-//       });
-//     }
-//   }, [dispatch, query]);
-  
-//   useEffect(() => {
-//     if (!searchTerm || !page) return;
+                    <meta name='title' content='Phim hoạt hình thuyết minh hoạt hình Trung Quốc | hh3dhay' />
+                    <meta name="description" content="hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại https://hhtm.live" />
+                    {/* Open Graph / Facebook */}
+                    <meta property='og:type' content='website' />
+                    <meta property='og:url' content='https://hoathinh3dhay.live' />
+                    <meta property='og:title' content='Phim hoạt hình thuyết minh hoạt hình Trung Quốc | hh3dhay' />
+                    <meta property='og:description' content='hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại https://hhtm.live' />
+                    <meta property='og:image' content='https://hhtm.tv/upload/product/2023_30_07_20_12_54-Fan-Ren-Xiu-Xian-Zhuan.jpg' />
+                    <meta property='og:image:width' content='1200' />
+                    <meta property='og:image:height' content='628' />
 
-//     scroll.scrollToTop({smooth: true});
+                    {/* Twitter */}
+                    <meta property='twitter:card' content='summary_large_image' />
+                    <meta property='twitter:url' content='https://hhtm.live' />
+                    <meta property='twitter:title' content='phim hoạt hình thuyết minh, hoạt hình Trung Quốc | hh3dhay' />
+                    <meta property='twitter:description' content='hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại https://hhtm.live' />
+                    <meta property='twitter:image' content='https://hhtm.tv/upload/product/2023_30_07_20_12_54-Fan-Ren-Xiu-Xian-Zhuan.jpg' />
 
-//     dispatch(getSearchMovies(searchTerm, page));
-//   }, [searchTerm, page, dispatch]);
+                </Head>
 
-//   if (movies.loading) {
-//     return <Loader />;
-//   } else if (movies.total_results === 0) {
-//     return (
-//       <NotFound
-//         title='Sorry!'
-//         subtitle={`There were no results for ${searchTerm}...`} />
-//     );
-//   } else {
-//     const { secure_base_url: baseUrl } = general.base.images;
+                <PaddingWrapper>
+                    <Header title={"Hoạt hình 3D TQ"} />
+                    <MovieList movies={movies2} />
+                </PaddingWrapper>
+            </PageWrapper>
+        </>
+    );
+};
 
-//     return (
-//       <PageWrapper>
-//         <PaddingWrapper>
-//           <Head>
-//             <title>{`${searchTerm} - Search Results`}</title>
-//           </Head>
-//           <Header
-//             title={searchTerm}
-//             subtitle='search results' />
-//           <MovieList
-//             movies={movies}
-//             baseUrl={baseUrl} />
-//         </PaddingWrapper>
-//       </PageWrapper>
-//     );
-//   }
-// };
+export default Home;
 
-const Search =()=>(<></>)
+import "../../mongodb"
+import Movie from '../../model/Movie';
+// import { getFromCache, saveToCache } from 'utils/cache/CacheHelper';
+import CacheHelperUtils from "utils/cache/CacheHelperUtils";
 
-export default Search;
+export async function getServerSideProps(context) {
+
+    try {
+        console.log(context);
+        // Fetch data from external API
+        const { searchTerm } = context.query;
+        if (!searchTerm) {
+            return {
+                notFound: true,
+            }
+        }
+        let data = await Movie.find({ title: new RegExp(searchTerm, 'i') })
+            .sort({ 'updateAt': "desc" }).limit(40).then(res => res)
+
+        if (!data) {
+            return {
+                notFound: true,
+            }
+        }
+
+        var jsonString = JSON.stringify(data);
+        jsonString = Buffer.from(jsonString).toString('base64');
+        jsonString = Buffer.from(jsonString).toString('base64');
+        jsonString = Buffer.from(jsonString).toString('base64');
+        jsonString = Buffer.from(jsonString).toString('base64');
+        let movies = Buffer.from(jsonString).toString('base64');
+
+        CacheHelperUtils.saveToCache("hoat-hinh-3d", { movies })
+        // Pass data to the page via props
+        return { props: { movies } }
+    } catch (error) {
+        console.log(error);
+        return {
+            notFound: true,
+        }
+    }
+
+}
