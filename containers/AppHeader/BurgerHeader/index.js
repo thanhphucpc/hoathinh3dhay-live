@@ -4,7 +4,6 @@ import AppBar from 'components/UI/AppBar';
 import HamburgerButton from 'components/UI/HamburgerButton';
 import SearchBar from 'containers/SearchBar';
 import DarkModeToggle from 'containers/DarkModeToggle';
-import TheUser from 'containers/TheUser';
 import GoHome from 'containers/GoHome';
 
 const BurgerHeader = ({ openMenu }) => (
