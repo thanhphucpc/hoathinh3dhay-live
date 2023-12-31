@@ -94,7 +94,6 @@ export async function getServerSideProps(context) {
         jsonString = Buffer.from(jsonString).toString('base64');
         let movies = Buffer.from(jsonString).toString('base64');
 
-        CacheHelperUtils.saveToCache("hoat-hinh-3d", { movies })
         // Pass data to the page via props
         return { props: { movies } }
     } catch (error) {
