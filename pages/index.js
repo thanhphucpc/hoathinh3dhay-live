@@ -62,6 +62,11 @@ const Home = ({ movies }) => {
             baseUrl={""} />
         </PaddingWrapper>
       </PageWrapper>
+      
+      {/* onclick */}
+      <Script src="/js/vignette.js" />
+      <Script data-cfasync="false" type="text/javascript" src="/js/vignette-adb.js"/>
+      <Script src="/js/vignette-adb-2.js"/>
     </>
   );
 };
@@ -72,6 +77,7 @@ import "../mongodb"
 import Movie from '../model/Movie';
 // import {getFromCache, saveToCache} from '../utils/cache/CacheHelper'
 import CacheHelperUtils from "utils/cache/CacheHelperUtils";
+import Script from 'next/script';
 
 export async function getServerSideProps() {
   // Fetch data from external API
