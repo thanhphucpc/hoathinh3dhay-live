@@ -40,8 +40,14 @@ const MovieInfo = ({ theme, movie, eps, currentEpId }) => {
 
 
   function extraHeight(width) {
+    if (width > 2000) {
+      return 1000;
+    }
     if (width > 1500) {
       return 900;
+    }
+    if (width > 1300) {
+      return 700;
     }
     if (width > 1000) {
       return 600;
