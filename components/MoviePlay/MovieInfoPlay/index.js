@@ -45,8 +45,8 @@ const MovieInfo = ({ theme, movie, eps, currentEpId }) => {
     }
     if (width > 1500) {
       return 550;
-    }}
-    if (width > 1200) {
+    }
+    if (width > 1000) {
       return 500;
     }
     if (width > 700) {

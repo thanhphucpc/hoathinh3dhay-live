@@ -140,6 +140,12 @@ export default css.global`
       font-size: 57.5%;
     }
   }
+  @media ${theme.mediaQueries.largest2} {
+    body {
+      margin-left:50px;
+      margin-right: 100px;
+    }
+  }
   @media ${theme.mediaQueries.large} {
     html {
       font-size: 55%;

@@ -87,7 +87,8 @@ const theme = {
     medium: 'only screen and (max-width: 900px)',
     large: 'only screen and (max-width: 1300px)',
     larger: 'only screen and (max-width: 1462.5px)',
-    largest: 'only screen and (max-width: 1500px)'
+    largest: 'only screen and (max-width: 1500px)',
+    largest2: 'only screen and (min-width: 1300px)'
   },
   custom: {
     layout: {
