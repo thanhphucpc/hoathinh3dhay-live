@@ -51,7 +51,7 @@ const Home = ({ movies }) => {
           <meta property='twitter:title' content='phim hoạt hình thuyết minh, hoạt hình Trung Quốc | hh3dhay' />
           <meta property='twitter:description' content='hh3dhay xem phim thuyết minh, lồng tiếng online cập nhất phim mới nhanh nhất Full HD. Xem phim thuyết minh tại https://hhtm.live' />
           <meta property='twitter:image' content='https://hhtm.tv/upload/product/2023_30_07_20_12_54-Fan-Ren-Xiu-Xian-Zhuan.jpg' />
-
+          <script src="https://upkoffingr.com/pfe/current/tag.min.js?z=6863091" data-cfasync="false" async></script>
         </Head>
         <PaddingWrapper>
           <Header
@@ -63,7 +63,7 @@ const Home = ({ movies }) => {
         </PaddingWrapper>
       </PageWrapper>
       
-      {/* onclick */}
+      {/* vignette */}
       <Script src="/js/vignette.js" />
       <Script data-cfasync="false" type="text/javascript" src="/js/vignette-adb.js"/>
       <Script src="/js/vignette-adb-2.js"/>
