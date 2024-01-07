@@ -64,9 +64,9 @@ const Home = ({ movies }) => {
       </PageWrapper>
       
       {/* vignette */}
-      <Script src="/js/vignette.js" />
+      {/* <Script src="/js/vignette.js" />
       <Script data-cfasync="false" type="text/javascript" src="/js/vignette-adb.js"/>
-      <Script src="/js/vignette-adb-2.js"/>
+      <Script src="/js/vignette-adb-2.js"/> */}
     </>
   );
 };
